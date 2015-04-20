@@ -1,0 +1,131 @@
+<html lang="en">
+  <head>
+    <title>WikipediaEditAnalysis</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">google.load("feeds", "1") //Load Google Ajax Feed API (version 1)
+</script>
+
+  </head>
+  <body>
+    <!--MAinMenu -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand"  href="#"><h4 class="text-primary">WikipediaEditAnalysis</h4></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>       
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technologies Used <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+              
+                <li><a href="#">HTML 5</a></li>
+                <li><a href="#">CSS3/BOOTSTRAP</a></li>
+                <li class="divider"></li>
+                
+                <li><a href="#">JQUERY</a></li>
+                <li><a href="#">AJAX</a></li>
+              </ul>
+            </li>            
+           
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    
+</div>
+<!--Menu Completed-->
+<br><br><br><br><br><br>
+
+<!---image Slider-->
+  
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+ <div id="box-1" class="box">
+    <img  class="img-responsive" src="images/1.jpg" alt="..."> 
+    </div>
+    <div class="col-sm-2"><div>
+  </div> 
+</div>
+<br><br>
+<br><br>
+
+<div class="row"> 
+<form role="form">
+     <div class="col-sm-8" id="feeddiv"></div>
+
+<script type="text/javascript">
+var feedcontainer=document.getElementById("feeddiv")
+var feedurl="http://rss.cnn.com/rss/edition.rss"
+var feedlimit=5
+var rssoutput="<b>Latest News:</b><br /><ul>"
+
+function rssfeedsetup(){
+var feedpointer=new google.feeds.Feed(feedurl) //Google Feed API method
+feedpointer.setNumEntries(feedlimit) //Google Feed API method
+feedpointer.load(displayfeed) //Google Feed API method
+}
+
+function displayfeed(result){
+if (!result.error){
+var thefeeds=result.feed.entries
+for (var i=0; i<thefeeds.length; i++)
+rssoutput+="<li><a href='" + thefeeds[i].link + "'>" + thefeeds[i].title + "</a></li>"
+rssoutput+="</ul>"
+feedcontainer.innerHTML=rssoutput
+}
+else
+alert("Error fetching feeds!")
+}
+
+window.onload=function(){
+rssfeedsetup()
+}
+
+</script>
+
+
+ <div class="col-sm-4">
+  <div class="form-group">
+    <label >Topic</label>
+    <input type="text" class="form-control" id="email">
+  </div>
+  <button type="submit" class="btn btn-default">Search</button>
+</form></div>
+
+
+
+
+
+<!--footer-->
+<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+<div class="container">
+  <div class="navbar-text pull-left">
+</div>
+</div>
+</div>
+
+<!--footer-->
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
