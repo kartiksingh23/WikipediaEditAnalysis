@@ -1,6 +1,14 @@
 body, h1, ul, li {
 	margin: 0; padding: 0; border: 0;
 }
+#container2
+{
+  background-color:#E6F0FA;
+}
+.back
+{
+  background-color:white;
+}
 h4
 {
   font-size:25px;
@@ -44,6 +52,26 @@ body {
 }
 img 
 {
-  position:relative;
-outline: 2px solid #909599;
+  width:auto;
+  padding-left: 15%
+  
+}
+.noborder
+{
+  outline: 0px;
+}
+.navbar
+{
+  background-color: white;
+}
+.carousel-control.left, .carousel-control.right
+{
+  background-image: none;
+}
+.carousel-indicators li {
+  background-color: red;
+  background-color: rgba(0,0,0,.25);
+}
+.carousel-indicators .active {
+  background-color:#E6F0FA;
 }
