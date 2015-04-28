@@ -24,3 +24,46 @@ body {
   padding-left:10px;
   color: white
 }
+
+img
+{
+  width:500px;
+  height:300px; 
+  float:left;
+}
+.backg
+{
+  background-color:#C0392B;
+  height:500px;
+  background-size: contain;
+}
+
+.backgt
+{
+  background-color: #F1C40F;
+  height:500px;
+  background-size: contain;
+}
+.backgth
+{
+  background-color:#7F8C8D;
+  background-size: :contain;
+  height:500px;
+}
+
+.backgth h1
+{
+  position:relative;
+  left:5%;
+  color:white;
+  font-size: 50px;
+  font-family: "Brush Script MT",cursive
+}
+
+.btn-primary
+{
+  position:relative;
+  left:7%;
+  font-size: 25px;
+  background-color: #5F8DD3;
+}
