@@ -27,41 +27,27 @@ body {
 {
   background-color: #404040  ;
 }
-.jumbotron
-{
-  height:900px;
-  padding-top: 8em;
-  background-image: url("../images/3.jpg");
-  background-size: cover;
-  padding-left:10px;
-  color: white;
 
-}
 
-img
-{
-  width:500px;
-  height:300px; 
-  float:left;
-}
+
 .backg
 {
   background-color:#C0392B;
-  height:500px;
+  height:100%;
   background-size: contain;
 }
 
 .backgt
 {
   background-color: #F1C40F;
-  height:500px;
+  height:100%;
   background-size: contain;
 }
 .backgth
 {
   background-color:#7F8C8D;
   background-size: :contain;
-  height:500px;
+  height:100%;
 }
 
 .backgth h1
@@ -79,5 +65,11 @@ img
   left:7%;
   font-size: 25px;
   background-color: #5F8DD3;
+}
+#down
+{
+  position:relative;
+  left:48%;
+  top:700px;
 }
 

@@ -10,3 +10,14 @@ $( document ).ready(function() {
         }
     ); 
 });
+
+$(document).ready(function (){
+            $("#down").click(function (){
+                //$(this).animate(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#second").offset().top
+                    }, 2000);
+                //});
+            });
+        });
+
