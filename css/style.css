@@ -4,11 +4,20 @@ body, h1, ul, li,.container-fluid,img {
 h1
 {
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
   line-height: 26.3999996185303px;
+}
+p
+{
+   font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 50.3999996185303px;
 }
 body {
 	background: #EDEFF1;
@@ -28,7 +37,10 @@ body {
   background-color: #404040  ;
 }
 
-
+#first
+{
+  height:100%;
+}
 
 .backg
 {
@@ -68,8 +80,56 @@ body {
 }
 #down
 {
+  height:70px;
   position:relative;
   left:48%;
-  top:700px;
+  top:750px;
+}
+#bigdata
+{
+  position:relative;
+  left:57%;
+  top:2%;
+}
+#bigdatatext
+{
+  position: relative;
+  padding-left:20%;
+  bottom:50%;
+ 
+}
+.btn-danger
+{
+  position:relative;
+  left:15%;
 }
 
+#stat
+{
+  position: relative;
+  left:25%;
+  
+}
+#stattext
+{
+  position:relative;
+  padding-left:36%;
+  color:white;
+}
+.btn-default
+{
+  position:relative;
+  left:2%;
+}
+#downsecond
+{
+  height:70px;
+  position:relative;
+  left:20%;
+}
+#downthird
+{
+  height:70px;
+  position:relative;
+  left:35%;
+}

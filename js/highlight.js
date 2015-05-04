@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 							$("#down").mouseover(function()
 													{
-														$("#down").css({"box-shadow": "0px 0px 10px #B2B2FF" , "border-radius":"150px"});
+														$("#down").css({"box-shadow": "0px 0px 10px black" , "border-radius":"150px"});
 													})
 
 
@@ -24,4 +24,26 @@ $(document).ready(function(){
 														$("#down").css({"box-shadow": "0 0 0 "});
 													})
 
+							$("#downsecond").mouseover(function()
+													{
+														$("#downsecond").css({"box-shadow": "0px 0px 10px black" , "border-radius":"150px"});
+													})
+
+
+													
+							$("#downsecond").mouseleave(function()
+													{
+														$("#downsecond").css({"box-shadow": "0 0 0 "});
+													})
+							$("#downthird").mouseover(function()
+													{
+														$("#downthird").css({"box-shadow": "0px 0px 10px black" , "border-radius":"150px"});
+													})
+
+
+													
+							$("#downthird").mouseleave(function()
+													{
+														$("#downthird").css({"box-shadow": "0 0 0 "});
+													})
 });

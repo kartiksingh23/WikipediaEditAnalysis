@@ -16,8 +16,30 @@ $(document).ready(function (){
                 //$(this).animate(function(){
                     $('html, body').animate({
                         scrollTop: $("#second").offset().top
-                    }, 2000);
+                    }, 1000);
                 //});
             });
         });
+
+
+$(document).ready(function (){
+            $("#downsecond").click(function (){
+                //$(this).animate(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#third").offset().top
+                    }, 1000);
+                //});
+            });
+        });
+$(document).ready(function (){
+            $("#downthird").click(function (){
+                //$(this).animate(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#final").offset().top
+                    }, 1000);
+                //});
+            });
+        });
+
+
 
