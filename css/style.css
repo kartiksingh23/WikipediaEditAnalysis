@@ -1,4 +1,4 @@
-body, h1, ul, li,.container-fluid,img {
+body, h1,div, ul, li,.container-fluid,img {
 	margin: 0; padding: 0; border: 0;
 }
 h1
@@ -40,12 +40,14 @@ body {
 #first
 {
   height:100%;
+  width: 100%;
 }
 
 .backg
 {
   background-color:#C0392B;
   height:100%;
+  width: 100%;
   background-size: contain;
 }
 
@@ -53,6 +55,7 @@ body {
 {
   background-color: #F1C40F;
   height:100%;
+  width: 100%;
   background-size: contain;
 }
 .backgth
@@ -60,6 +63,7 @@ body {
   background-color:#7F8C8D;
   background-size: :contain;
   height:100%;
+  width: 100%;
 }
 
 .backgth h1
@@ -83,19 +87,20 @@ body {
   height:70px;
   position:relative;
   left:48%;
-  top:750px;
+  top:83%;
+  z-index: 10;
 }
 #bigdata
 {
   position:relative;
-  left:57%;
+  left:48%;
   top:2%;
 }
 #bigdatatext
 {
   position: relative;
-  padding-left:20%;
-  bottom:50%;
+  padding-left:5%;
+  bottom:55%;
  
 }
 .btn-danger
@@ -113,23 +118,28 @@ body {
 #stattext
 {
   position:relative;
-  padding-left:36%;
+  padding-left:35%;
   color:white;
 }
 .btn-default
 {
   position:relative;
-  left:2%;
+  left:3%;
 }
 #downsecond
 {
   height:70px;
   position:relative;
-  left:20%;
+  left:48%;
+  top:82%;
+  z-index: 10;
+  
 }
 #downthird
 {
   height:70px;
   position:relative;
-  left:35%;
+  left:48%;
+  z-index: 10;
+  top:82%;
 }
