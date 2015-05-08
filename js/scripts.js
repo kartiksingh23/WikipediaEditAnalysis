@@ -42,4 +42,9 @@ $(document).ready(function (){
         });
 
 
-
+$(document).ready(function()
+{
+    $(".statbutton").click(function(){
+        window.location.href="stat.html";
+    })
+})
